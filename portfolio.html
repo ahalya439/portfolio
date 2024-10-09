@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <h1>𝔭𝔬𝔯𝔱𝔣𝔬𝔩𝔦𝔬</h1>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+ 
+      <ul class="unorder" id="menu">
+        <li ><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li class="dropdown">
+       <span class="carrer">CAREER</span>
+          <!-- <span>about</span> -->
+          <!-- <a href="about"><span>ABOUT</a></span> -->
+          <div class="dropdown-content">
+            <p><a href="#timeline">EDUCATION</a></p>
+            <p><a href="#skills">SKILLS</a></p>
+            <p><a href="#internship">EXPERIENCES</a></p>
+           
+            <p><a href="#project">PROJECT</a></p>
+
+            <div class="dropdownn">
+           <span>HOBBIES</span>
+              <div class="dropdown-contentt">
+                <p><a href="#drawing">DRAWING</a></p>
+             
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list"><a href="#contact">CONTACT</a></li>
+        <button onclick="myFunction()" class="button-moon">  <i class="fa-solid fa-moon"></i></button>
+      
+      </ul>
+     </div>
+     
+    <!-- home -->
+    <section id="home">
+      <div class="home">
+        <div class="text">
+          <p>HELLO, I AM AHALYA S</p>
+          <p class="span">WEB DEVELOPER</p>
+         
+          <div class="contact-share">
+            
+          <a href="https://www.linkedin.com/in/ahalya-s-386b10227/" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+          <a href=" https://github.com/ahalya439"target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/_lovelicious.girl_?igsh=MXJodW1nanl4bWxveA=="target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.snapchat.com/add/ahalya_35?share_id=_zRfiLwJC28&locale=en-IN"target="_blank" class="social-icon">
+          
+            <i class="fa-brands fa-snapchat"></i></a>
+          </div>
+        </div>
+        <div class="image"> 
+          <img src="images/pic.jpg" class="im" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1 class="ab" data-aos="fade-up" data-aos-duration="500">
+        <span>ABOUT ME</span>
+      </h1>
+      <div class="about">
+        <div class="left">
+          <img src="images/picc.jpg" class="im2" data-aos="fade-right" />
+        </div>
+        <div class="right" data-aos="fade-left">
+          <p>
+            I am an enthusiastic beginner front-end developer with a passion for
+            creating seamless and visually appealing web applications. Skilled
+            in HTML, CSS, SCSS, Angular, Bootstrap, JavaScript, and TypeScript,
+            I am dedicated to transforming creative ideas into clean, efficient
+            code. Eager to grow and learn, I thrive in collaborative
+            environments, working closely with teams to bring innovative digital
+            experiences to life. My attention to detail and problem-solving
+            skills ensure that I deliver high-quality work. I am driven to
+            continuously improve and make a meaningful impact through my
+            projects.
+          </p>
+          <a href="images/resume updated.pdf" class="resume-download" target="_blank" download> Resume</a>
+
+        </div>
+      </div>
+    </section>
+    <section id="timeline">
+      <h1 class="edu" data-aos="fade-up" data-aos-duration="500">
+        <span>Education</span>
+      </h1>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <div
+            class="timeline-content left"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <h2>2020 - 2024</h2>
+            <p>Bachelor's Degree in Computer Science and Engineering<br />
+            Knowledge Institute of Technology<br />
+            <strong>CGPA:</strong> 83.95
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div
+            class="timeline-content right"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <h2>2019 - 2020</h2>
+            <p>12th Grade<br />
+            Lotus Matric Hr. Sec. School<br />
+            <strong>Percentage:</strong> 77.33%
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div
+            class="timeline-content left"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <h2>2017 - 2018</h2>
+            <p>10th Grade<br />
+            Lotus Matric Hr. Sec. School<br />
+            <strong>Percentage:</strong> 88.4%
+            </p>
+          </div>
+        </div>
+    
+        <!-- Add more timeline items as needed -->
+      </div>
+    </section>
+    
+    
+
+    <!-- 
+    <section id="education">
+      <h1 class="edu">EDUCATION</h1>
+      <div class="education<span>">
+     </span>   <div class="leftt">
+          <img src="images/picccc.jpg" class="im3" />
+        </div>
+        <div class="rightt">
+          <p class="clg">KNOWLEDGE INSTITUTE OF TECHNOLOGY</p>
+          <p>KAKAPALAYAM,SALEM</p>
+          <p>CGPA - 8.4</p>
+        </div>
+        <div class="leftt">
+          <img src="images/piccc.jpeg" class="im3" />
+        </div>
+        <div class="rightt two">
+          <p class="clg">LOTUS MATRIC HR.SEC.SCHOOL</p>
+          <p>KAKAPALAYAM,SALEM</p>
+          <p>12TH - 77.33</p>
+          <div class="ten">
+            <p class="clg">LOTUS MATRIC HR.SEC.SCHOOL</p>
+            <p>KAKAPALAYAM,SALEM</p>
+            <p>10TH - 88.4</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section id="skills">
+      <h1 class="sk" data-aos="fade-up" data-aos-duration="500">
+        <span>SKILLS</span>
+      </h1>
+      <div class="skills">
+        <img src="images/html5.jpg" class="im5" />
+        <img src="images/css.png" class="im5" />
+        <img src="images/Bootstrap.png" class="im5" />
+        <img src="images/js.png" class="im5" />
+        <img src="images/angular.png" class="im5" />
+        <img src="images/ts.jpeg" class="im5" />
+      </div>
+    </section>
+
+    <section id="internship">
+      <h1 class="int" data-aos="fade-up" data-aos-duration="500">
+        <span>EXPERIENCES</span>
+      </h1>
+
+      <div class="internship" data-aos="fade-up" data-aos-duration="2000">
+        <div class="cisco">
+          <div class="frontint">
+            <img src="images/cisco.jpg" class="im7" />
+
+            <div class="backint"><br>
+              <h3>Networking Intern at Cisco (AICTE Virtual)
+                <i>1 months</i></h3><br>
+              
+              <p>Gained hands-on experience in networking fundamentals, including configuration and troubleshooting, through virtual labs and real-world scenarios.</p>
+            
+            </div>
+          </div>
+        </div>
+        <div class="ict">
+          <div class="frontint">
+            <img src="images/ICT certificate.jpg" class="im7" />
+
+            <div class="backint"><br>
+              <h3>Web Development Intern at ICT Academy - Open Weaver
+                <i>1 months</i></h3><br>
+              
+              <p>Worked on web development projects, focusing on coding and design, enhancing user interfaces and functionality.</p>
+            
+            </div>
+          </div>
+        </div>
+        <div class="gur">
+          <div class="frontint">
+            <img src="images/gururo.jpg" class="im7" />
+
+            <div class="backint"><br>
+              <h3>Business Development Intern at Gururo  -  <i>2 months</i></h3><br>
+              
+              <p>Focused on growth strategies, market analysis, and client engagement, contributing to business expansion.</p>
+            </div>
+          </div>
+        </div>
+        <div class="ibm">
+          <div class="frontint">
+            <img src="images/ibm.jpg" class="im7" />
+
+            <div class="backint"><br>
+              <h3>
+                Here’s a concise description for that internship:
+                
+                 -  <i>2 months</i></h3><br>
+              
+              <p>Developed and maintained the FSD Restaurant Management system, working on both front-end and back-end components to enhance functionality and user experience.</p>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<section id="certification">
+  <div class="certification">
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    <section id="project">
+      <h1 class="pro"><span>PROJECT</span></h1>
+      <div class="project">
+        <div class="left-side" data-aos="fade-right" data-aos-duration="1000">
+          <a href="http://localhost:4200/login">
+            <img src="images/fb.png" alt="Training feedback system" class="im8"
+          /></a>
+        </div>
+        <div class="right-side" data-aos="fade-left" data-aos-duration="1000">
+          <h1 class="h1">Training feedback System</h1>
+          <p>
+            A dynamic training feedback system ensures seamless collaboration
+            between instructors, admins, and participants. After each session,
+            participants provide valuable feedback that is instantly visible to
+            both instructors and admins. Admins then deliver targeted insights
+            based on this feedback, leading to an aggregated report that drives
+            continuous improvement. This streamlined process enhances training
+            outcomes and fosters a culture of growth and excellence.
+          </p>
+          <p class="tec">TECHNOLOGY USED</p>
+
+          <div class="tech">
+            <p class="techii">Bootstrap</p>
+            <p class="techii">Angular</p>
+            <p class="techii">TypeScript</p>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="left-side" data-aos="fade-right" data-aos-duration="1000">
+          <img src="images/tt.png" alt="Training feedback system" class="im8" />
+        </div>
+        <div class="right-side" data-aos="fade-left" data-aos-duration="1000">
+          <h1 class="h1">Train Ticket Booking</h1>
+          <p>
+            Efficient train ticket booking system: Register if you're new, log
+            in, and enter your travel dates. Check availability, add passenger
+            details, and manage your bookings with ease. Book your train, see
+            all your reservations in "My Bookings," and enjoy a seamless travel
+            planning experience.
+          </p>
+          <p class="tec">TECHNOLOGY USED</p>
+
+          <div class="tech">
+            <p class="techii">Bootstrap</p>
+            <p class="techii">API</p>
+            <p class="techii">Angular</p>
+            <p class="techii">TypeScript</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="drawing">
+      <h1 class="hob" data-aos="fade-up" data-aos-duration="1000">
+        <span>HOBBIES-Drawing</span>
+      </h1>
+      <div class="cards" data-aos="fade-right" data-aos-duration="500">
+        <div class="card">
+          <div class="card-header">
+            <img src="images/dho.jpg" alt="DHONI" class="dho" />
+          </div>
+          <div class="card-body">
+            <p class="textt">MS DHONI </p>
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="images/muruga.jpg" alt="muruga" class="muruga" />
+          </div>
+          <div class="card-body">
+            <p class="textt">MURGAR</p>
+          </div>
+        
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <img src="images/she.jpg" alt="she" class="she" />
+          </div>
+          <div class="card-body">
+            <p class="textt">WOMEN</p>
+          </div>
+        
+        </div>
+      </div>
+    </section>
+<section id="contact">
+  <h1 class="con" data-aos="fade-up" data-aos-duration="1000">
+    <span>CONTACT ME</span>
+  </h1>
+  <div class="contact">
+    <div class="left-contact" data-aos="fade-right" data-aos-duration="1000">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15636.192790739531!2d77.97679409024188!3d11.548400391856832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babe3d793bd55c9%3A0xf93b045f8e65c62f!2sMagudanchavadi%2C%20Tamil%20Nadu%20637103!5e0!3m2!1sen!2sin!4v1723388859246!5m2!1sen!2sin" class="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="right-contact"data-aos="fade-up" data-aos-duration="1000">
+      <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Name" class="name" required>
+        <input type="email" id="email" name="email" placeholder="Email" class="email" required>
+        <textarea id="message" name="message" placeholder="Message" class="message" rows="5" required></textarea>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+      <div id="status"></div>
+    </div>
+ 
+</section>
+
+<section id ="footer">
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2>About Me</h2>
+        <p>
+          Ahalya S, a passionate web developer with a strong background in front-end technologies. Always eager to learn and create visually appealing and functional web applications.
+        </p>
+      </div>
+  
+      <div class="footer-center">
+        <h2>Quick Links</h2>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-right">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:ahalya@example.com">sahalya439@gmail.com</a></p>
+        <p>Phone: +91 9952548057</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/ahalya-s-386b10227/" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+          <a href=" https://github.com/ahalya439" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/_lovelicious.girl_?igsh=MXJodW1nanl4bWxveA==" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Ahalya S. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+</section>
+<!-- Main content of your page -->
+
+<!-- Back to Top Button -->
+<a href="#" id="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script> 
+   
+<!-- <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script> -->
+<!-- <script type="text/javascript">
+  (function() {
+    emailjs.init("WmOwqW86svs96a1Kj"); // Replace with your User ID from EmailJS
+  })();
+</script> -->
+<!-- 
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_m0wxohg', 'template_lfuu89j', this)
+      .then(function(response) {
+        alert('Message sent successfully!');
+      }, function(error) {
+        alert('Failed to send the message. Please try again.');
+      });
+  }); -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+           
+            emailjs.init("WmOwqW86svs96a1Kj");
+
+            var form = document.getElementById('contactForm');
+            var statusDiv = document.getElementById('status');
+
+            if (form) {
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault();
+
+                    emailjs.sendForm('service_m0wxohg', 'template_lfuu89j', this)
+                        .then(function(response) {
+                            statusDiv.textContent = "Message sent successfully!";
+                            
+                            form.reset();
+                        }, function(error) {
+                            statusDiv.textContent = "Failed to send message.";
+                            
+                        });
+                });
+            } else {
+                console.log('Contact form not found!');
+            }
+        });
+    </script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+     <script>
+      window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    const backToTopButton = document.getElementById("back-to-top");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+}
+
+    </script> 
+    
+
+    <script>
+    function toggleMenu() {
+  const menu = document.getElementById('menu');
+  if (menu.style.display === 'flex') {
+    menu.style.display = 'none';
+  } else {
+    menu.style.display = 'flex';
+    
+    // Add event listener to each menu link to hide the menu after click
+    const menuLinks = document.querySelectorAll('.unorder li a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        menu.style.display = 'none';
+      });
+    });
+  }
+}
+
+
+    </script>
+    <script>
+      function myFunction() {
+    document.body.classList.toggle("dark-mode");
+}
+
+    </script>
+     
+  </body>
+</html>
+
+
